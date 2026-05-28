@@ -1,1 +1,1 @@
-Just a goofy ah snake game.
+# Just a goofy ah snake game.
