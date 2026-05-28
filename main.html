@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Snake</title>
+
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+        background: black;
+        font-family: Arial, sans-serif;
+      }
+
+      canvas {
+        display: block;
+      }
+
+      .ui {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        color: white;
+        font-size: 24px;
+        z-index: 10;
+      }
+
+      .menu {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.8);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        color: white;
+        z-index: 20;
+      }
+
+      button {
+        padding: 12px 24px;
+        font-size: 20px;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ui">
+      <div>Score: <span id="score">0</span></div>
+      <div>Best: <span id="best">0</span></div>
+    </div>
+
+    <div class="menu" id="menu">
+      <h1>Snake</h1>
+      <button id="startBtn">Start Game</button>
+    </div>
+
+    <canvas id="canva"></canvas>
+  </body>
+  <script src="index.js"></script>
+</html>
